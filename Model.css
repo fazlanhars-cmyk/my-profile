@@ -285,6 +285,42 @@ footer p {
   box-shadow: 0 4px 14px rgba(107, 114, 128, 0.45);
 }
 
+/* ===== Layout gambar + teks (Profil, Performance, Portofolio) ===== */
+.Profil-isi,
+.Performance-isi,
+.Portofolio-isi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.Profil-isi img,
+.Performance-isi img,
+.Portofolio-isi img {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 6px 20px rgba(31, 41, 55, 0.2);
+}
+
+.Profil-teks,
+.Performance-teks,
+.Portofolio-teks {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+
+.Performance-teks ul {
+  margin: 0;
+  padding-left: 22px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
 /* ===== Tampilan HP ===== */
 @media (max-width: 600px) {
   nav {
@@ -302,25 +338,29 @@ footer p {
     padding: 24px 18px;
   }
 
-  .profil-isi {
+  .Profil-isi,
+  .Performance-isi,
+  .Portofolio-isi {
     flex-direction: column;
-    text-align: center;
     gap: 20px;
+    text-align: center;
   }
 
-  .profil-isi img {
+  .Profil-isi img,
+  .Performance-isi img,
+  .Portofolio-isi img {
     width: 150px;
     height: 150px;
-    flex-shrink: 0;
   }
 
-  .profil-teks {
+  .Profil-teks,
+  .Performance-teks,
+  .Portofolio-teks {
     flex: none;
     width: 100%;
-    min-width: 0;
   }
 
-  .profil-teks ul {
+  .Performance-teks ul {
     text-align: left;
   }
 
@@ -334,4 +374,3 @@ footer p {
     font-size: 1rem;
   }
 }
-
