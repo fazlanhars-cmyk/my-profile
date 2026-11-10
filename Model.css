@@ -163,60 +163,11 @@ footer p {
   margin: 0;
 }
 
-/* ===== Tampilan HP ===== */
-/* ===== Tampilan HP ===== */
-@media (max-width: 600px) {
-  nav {
-    font-size: 0;
-    padding: 12px;
-  }
-
-  nav a {
-    margin: 4px;
-    padding: 8px 14px;
-    font-size: 0.75rem;
-  }
-
-  section {
-    padding: 24px 18px;
-  }
-
-  .profil-isi {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  .profil-isi img {
-    width: 150px;
-    height: 150px;
-    flex-shrink: 0;
-  }
-
-  .profil-teks {
-    flex: none;
-    width: 100%;
-    min-width: 0;
-  }
-
-  .profil-teks ul {
-    text-align: left;
-  }
-
-  h1 {
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    overflow-wrap: anywhere;
-  }
-
-  .kartu h2 {
-    font-size: 1rem;
-  }
-}
 
 /* ===== Layout profil: gambar kiri, teks kanan ===== */
 .Profile-isi {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 30px;
 }
@@ -231,7 +182,7 @@ footer p {
 }
 
 .profile-teks {
-  flex: 1;
+    flex: 1 1 260px;
 }
 
 /* ===== Layout portofolio: gambar kiri, teks kanan ===== */
@@ -333,3 +284,54 @@ footer p {
   border-color: #fafbfd;
   box-shadow: 0 4px 14px rgba(107, 114, 128, 0.45);
 }
+
+/* ===== Tampilan HP ===== */
+@media (max-width: 600px) {
+  nav {
+    font-size: 0;
+    padding: 12px;
+  }
+
+  nav a {
+    margin: 4px;
+    padding: 8px 14px;
+    font-size: 0.75rem;
+  }
+
+  section {
+    padding: 24px 18px;
+  }
+
+  .profil-isi {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .profil-isi img {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+  }
+
+  .profil-teks {
+    flex: none;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .profil-teks ul {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    overflow-wrap: anywhere;
+  }
+
+  .kartu h2 {
+    font-size: 1rem;
+  }
+}
+
