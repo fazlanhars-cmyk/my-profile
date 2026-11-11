@@ -298,7 +298,7 @@ footer p {
 .Profil-isi img,
 .Performance-isi img,
 .Portofolio-isi img {
-  width: 200px;
+  width: 200px; 
   height: 200px;
   flex-shrink: 0;
   object-fit: cover;
